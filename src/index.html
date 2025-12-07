@@ -3,19 +3,288 @@
     <meta charset="UTF-8">
     <title>HW8</title>
     <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>
 <div class="Content">
-    <header id="header">Header</header>
-    <section id="about">About</section>
-    <section id="education">Education</section>
-    <section id="experience">Work Experience</section>
-    <section id="skills">Skills</section>
-    <section id="contacts">Contacts</section>
-    <footer id="footer">Footer</footer>
+
+    <header id="header">
+        <img src="./assets/svg/logo.svg" alt="логотип" width="40" height="40">
+        <div class="menu">
+            <button class="menu-button mobile-hide">
+                <span class="menu-label">About me</span>
+            </button>
+            <button class="menu-button mobile-hide">
+                <span class="menu-label">Education</span>
+            </button>
+            <button class="menu-button mobile-hide">
+                <span class="menu-label">Work Experience</span>
+            </button>
+            <button class="menu-button mobile-hide">
+                <span class="menu-label">Skills</span>
+            </button>
+            <button class="menu-button">
+                <span class="menu-label">Contacts</span>
+            </button>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2 class="section-header">Hello!
+            My name is Alex&nbsp;Smith
+            I'm creative front-end developer</h2>
+        <div class="image-container">
+            <img src="./assets/img/clark-van-der-beken.jpg" alt="Abstract geometric design">
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-header">Education</h2>
+        <div class="info">
+            <div class="column">
+                <div class="education-info-block">
+                    <div class="title-location">
+                        <h3 class="info-text title">Kingston university</h3>
+                        <p class="info-text">Master's degree - Software Engineering</p>
+                    </div>
+                    <p class="info-text period">2019 - 2021</p>
+                </div>
+                <div class="education-info-block">
+                    <div class="title-location">
+                        <h3 class="info-text title">Kingston university</h3>
+                        <p class="info-text">Bachelor's degree - Computer Engineering</p>
+                    </div>
+                    <p class="info-text period">2015 - 2019</p>
+                </div>
+                <div class="education-info-block">
+                    <div class="title-location">
+                        <h3 class="info-text title">Westminster School</h3>
+                        <p class="info-text">Diploma's degree - Mathematics</p>
+                    </div>
+                    <p class="info-text period">2013 - 2015</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="education-info-block">
+                    <div class="title-location">
+                        <h3 class="info-text title">Kingston university</h3>
+                        <p class="info-text">Master's degree - Software Engineering</p>
+                    </div>
+                    <p class="info-text period">2019 - 2021</p>
+                </div>
+                <div class="education-info-block">
+                    <div class="title-location">
+                        <h3 class="info-text title">Kingston university</h3>
+                        <p class="info-text">Bachelor's degree - Computer Engineering</p>
+                    </div>
+                    <p class="info-text period">2015 - 2019</p>
+                </div>
+                <div class="education-info-block">
+                    <div class="title-location">
+                        <h3 class="info-text title">Westminster School</h3>
+                        <p class="info-text">Diploma's degree - Mathematics</p>
+                    </div>
+                    <p class="info-text period">2013 - 2015</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-header">Work Experience</h2>
+        <div class="menu">
+            <button class="menu-button">
+                <span class="menu-label">Apple</span>
+            </button>
+            <button class="menu-button">
+                <span class="menu-label">Microsoft</span>
+            </button>
+            <button class="menu-button">
+                <span class="menu-label">Facebook</span>
+            </button>
+        </div>
+        <div class="experience-info">
+            <div class="text">
+                <div class="title-location">
+                    <h3 class="info-text title">Front-end Developer Apple.Inc</h3>
+                    <p class="info-text">California, United States</p>
+                </div>
+                <p class="info-text period">Nov 2020 - Present · Full-time</p>
+                <p class="info-text mobile-hide">В начале XX века немецкие психологи провели исследования восприятия
+                    человеком окружающего мира. Они выявили естественное стремление человека найти порядок в
+                    беспорядке.</p>
+                <p class="info-text mobile-hide"> Их эксперименты показали, что когда мозг обрабатывает полученные
+                    образы, он воспринимает разрозненные элементы как единое целое. Подсознательно мы пытаемся
+                    группировать похожие элементы, распознавать закономерности и таким образом упрощать сложные
+                    образы.</p>
+            </div>
+
+            <div class="image-container">
+                <img src="./assets/img/clark-van-der-beken.jpg" alt="Abstract geometric design">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-header">Skills</h2>
+        <div class="skill-bars">
+            <div class="column">
+                <div class="bar-item">
+                    <div class="bar-top">
+                        <div class="label-header">React</div>
+                        <img class="desktop-hide" src="./assets/svg/close.svg" alt="close button">
+                    </div>
+                    <div class="bar-back">
+                        <div class="bar-fore" id="react"></div>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-top">
+                        <div class="label-header">Angular</div>
+                        <img class="desktop-hide" src="./assets/svg/close.svg" alt="close button">
+                    </div>
+                    <div class="bar-back">
+                        <div class="bar-fore" id="angular"></div>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-top">
+                        <div class="label-header">HTML + CSS</div>
+                        <img class="desktop-hide" src="./assets/svg/close.svg" alt="close button">
+                    </div>
+                    <div class="bar-back">
+                        <div class="bar-fore" id="html-css"></div>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-top">
+                        <div class="label-header">Javascript</div>
+                        <img class="desktop-hide" src="./assets/svg/close.svg" alt="close button">
+                    </div>
+                    <div class="bar-back">
+                        <div class="bar-fore" id="javascript"></div>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-top">
+                        <div class="label-header">Python</div>
+                        <img class="desktop-hide" src="./assets/svg/close.svg" alt="close button">
+                    </div>
+                    <div class="bar-back">
+                        <div class="bar-fore" id="python"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="bar-item">
+                    <div class="bar-top">
+                        <div class="label-header">Soft skill</div>
+                        <img class="desktop-hide" src="./assets/svg/close.svg" alt="close button">
+                    </div>
+                    <div class="bar-back">
+                        <div class="bar-fore" id="soft-skill"></div>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-top">
+                        <div class="label-header">Motion graphics</div>
+                        <img class="desktop-hide" src="./assets/svg/close.svg" alt="close button">
+                    </div>
+                    <div class="bar-back">
+                        <div class="bar-fore" id="motion-graphics"></div>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-top">
+                        <div class="label-header">UX</div>
+                        <img class="desktop-hide" src="./assets/svg/close.svg" alt="close button">
+                    </div>
+                    <div class="bar-back">
+                        <div class="bar-fore" id="ux"></div>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-top">
+                        <div class="label-header">UI</div>
+                        <img class="desktop-hide" src="./assets/svg/close.svg" alt="close button">
+                    </div>
+                    <div class="bar-back">
+                        <div class="bar-fore" id="ui"></div>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-top">
+                        <div class="label-header">3D</div>
+                        <img class="desktop-hide" src="./assets/svg/close.svg" alt="close button">
+                    </div>
+                    <div class="bar-back">
+                        <div class="bar-fore" id="three-d"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-skill-form">
+            <h3 class="form-header mini-header">Add new skill</h3>
+            <div class="form-container">
+                <div class="form-field">
+                    <label for="skill-name" class="label-header">Skill name</label>
+                    <input id="skill-name" class="form-input">
+                </div>
+                <div class="form-field">
+                    <label for="skill-percentage" class="label-header">Skill proficiency percentage, %</label>
+                    <input id="skill-percentage" class="form-input">
+                </div>
+                <button class="add-button info-text">Add</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h2 class="section-header">Contacts</h2>
+        <div class="contacts-row">
+            <div class="contact-container">
+                <img class="contact-icon" src="./assets/svg/pin.svg" alt="pin">
+                <div class="title-location">
+                    <h3 class="info-text title">Address</h3>
+                    <p class="info-text">16 Lva Tolstogo str., Moscow</p>
+                </div>
+            </div>
+            <div class="contact-container">
+                <img class="contact-icon" src="./assets/svg/phone-call.svg" alt="phone call">
+                <div class="title-location">
+                    <h3 class="info-text title">Phone</h3>
+                    <p class="info-text">+7 (000) 000 00 00</p>
+                </div>
+            </div>
+            <div class="contact-container">
+                <img class="contact-icon" src="./assets/svg/mail.svg" alt="main">
+                <div class="title-location">
+                    <h3 class="info-text title">E-Mail</h3>
+                    <p class="info-text">myemail@yandex.ru</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="social-media">
+            <a href="#" class="social-link">
+                <img src="assets/svg/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="#" class="social-link">
+                <img src="assets/svg/github.svg" alt="Github" class="social-icon">
+            </a>
+            <a href="#" class="social-link">
+                <img src="assets/svg/twitter.svg" alt="Twitter" class="social-icon">
+            </a>
+            <a href="#" class="social-link">
+                <img src="assets/svg/linkedin.svg" alt="Linkedin" class="social-icon">
+            </a>
+        </div>
+        <p class="copyright">&copy; 2023</p>
+    </footer>
+
 </div>
-
-<img class="Image" width="500px"/>
-
 </body>
 </html>
+
