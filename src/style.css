@@ -51,13 +51,8 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--bg-color);
-}
-
-.menu-label {
     font-size: var(--sm-text-font-size);
-    font-weight: var(--font-weight);
     color: var(--pre-black);
-    text-align: center;
 }
 
 .image-container {
@@ -148,16 +143,10 @@ body {
     justify-content: space-between;
 
     .info {
-        display: flex;
-        gap: 32px;
-        width: 100%;
-
-        .column {
-            display: flex;
-            flex-direction: column;
-            gap: 32px;
-            width: 100%;
-        }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 32px;
+        row-gap: 32px;
     }
 }
 
@@ -215,17 +204,10 @@ body {
     justify-content: space-between;
 
     .skill-bars {
-        display: flex;
-        justify-content: space-between;
-        gap: 32px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 32px;
         height: auto;
-
-        .column {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 100%;
-        }
     }
 
     .add-skill-form {
@@ -372,14 +354,18 @@ body {
 }
 
 .desktop-hide {
-    display: none;
+    opacity: 0;
+}
+
+.desktop-hide:hover {
+    opacity: 1;
 }
 
 @media (max-width: 1920px) {
 
     .Content {
-        width: 358px;
-        padding: 0 16px;
+        max-width: 358px;
+        padding-block: 16px;
         gap: 60px
     }
 
@@ -388,19 +374,19 @@ body {
     }
 
     .section-header {
+        line-height: 1;
         font-size: var(--h2-font-size-modile);
-        line-height: 36px;
     }
 
     .desktop-hide {
-        display: block;
+        opacity: 1;
     }
 
     #header {
         padding: 16px 0;
 
         img {
-            padding: 2px 0 0 0;
+            padding-top: 2px;
         }
     }
 
@@ -420,8 +406,7 @@ body {
         gap: 32px;
 
         .info {
-            flex-direction: column;
-            gap: 32px;
+            grid-template-columns: 1fr;
         }
     }
 
@@ -455,19 +440,14 @@ body {
     }
 
     #skills {
-
         gap: 32px;
 
         .skill-bars {
-            flex-direction: column;
-            gap: 24px;
+            grid-template-columns: 1fr;
+            column-gap: 24px;
+            row-gap: 24px;
             height: auto;
         }
-
-        .skill-bars .column {
-            gap: 24px;
-        }
-
     }
 
     .bar-item {
@@ -476,7 +456,6 @@ body {
 
     .add-skill-form {
         flex: 1;
-        height: 344px;
 
         .form-header {
             height: 24px;
